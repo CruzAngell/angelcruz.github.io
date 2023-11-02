@@ -5,11 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./js/main.js">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>AngelCruz.dev | Desarrollador</title>
 </head>
 <body>
-    
+    <div class="cursor"></div>
+    <script>
+        var cursor = document.querySelector(".cursor");
+        let originalOpacity = 1;
+
+        document.addEventListener("mousemove",function(e){
+        cursor.style.cssText = "left: " + e.clientX + "px; top: " +e.clientY + "px;";
+        });
+
+        document.addEventListener("click",function(e){
+        cursor.style.opacity = "0"; 
+        
+        setTimeout(() => {
+        cursor.style.opacity = originalOpacity;
+        }, 200);
+        });
+
+        
+    </script>
     <header class="header">
         <div class="logo">
             <a href="#" class="logo-tittle">AngelCruz<span>.dev</span></a>

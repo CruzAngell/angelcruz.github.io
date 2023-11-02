@@ -13,7 +13,8 @@
 :root{
     --color_naranja: #ff6b01;
     --color_claro: #F4F4F4;
-    --color_oscuro: #1f2e3a;
+    --color_oscuro: #1d2a35;
+    --color_semi_oscuro: #2b3f50;
 }
 html{
     scroll-behavior: smooth;
@@ -21,6 +22,24 @@ html{
 body{
     margin: 0rem 20% 2rem;
     background-color: var(--color_oscuro);
+    background: linear-gradient(to right, var(--color_oscuro), var(--color_semi_oscuro));
+}
+::selection{
+    background-color: var(--color_naranja);
+    color: var(--color_oscuro);
+}
+.cursor{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--color_naranja);
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: .1s;
 }
 .header{
     display: flex;
