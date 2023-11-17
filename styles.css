@@ -11,9 +11,9 @@
     font-family: 'Jost', sans-serif;
 }
 :root{
-    --color_naranja: #ff6b01;
+    --color_naranja: #ff7e33;
     --color_claro: #F4F4F4;
-    --color_oscuro: #1d2a35;
+    --color_oscuro: #251f37;
     --color_semi_oscuro: #2b3f50;
 }
 html{
@@ -21,7 +21,7 @@ html{
 }
 body{
     margin: 0rem 20% 2rem;
-    background: linear-gradient(to right, var(--color_oscuro), var(--color_semi_oscuro));
+    background: var(--color_oscuro)
 }
 ::selection{
     background-color: var(--color_naranja);
@@ -39,12 +39,18 @@ body{
     transform: translate(-50%, -50%);
     opacity: 1;
     transition: .1s;
+    z-index: 1;
+    
 }
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 16px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    padding: 15px 15px;
 }
 .logo-tittle{
     font-size: 22px;
@@ -73,7 +79,6 @@ body{
 .enlaces i{
     font-size: 2rem;
 }
-
 .social-icons{
     display: flex;
     justify-content: center;
