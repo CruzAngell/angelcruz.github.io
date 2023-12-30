@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!--<link rel="icon" href="./images/favicon.ico">-->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./js/main.js">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -36,9 +36,9 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="#experience">Experiencia</a></li>
-                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
                 <li><a href="#education">Formación</a></li>
-                <li><a href="mailto:cruzangel0206@gmail.com" target="_self">Contacto</a></li>
+                <li><a href="mailto:cruzangel0206@gmail.com" target="_self">Contácto</a></li>
             </ul>
         </nav>
         
@@ -48,7 +48,7 @@
         <div class="content-intro">
             <h3>¡Hola!</h3>
             <h1>Soy Angel Cruz</h1>
-            <h2>Desarrollador</h2>
+            <h2 class="typing">Desarrollador</h2>
             <p>
                 Experiencia en Administración de Bases De Datos a nivel Empresarial y Desarrollo e Implementación de mejoras en Software. Conocimientos básicos en lenguajes de programación <span>BackEnd</span> y <span>FrontEnd</span>. 
             </p>
@@ -59,6 +59,7 @@
                     <div class="social-icons">
                         <a class="github-icon" href="https://github.com/CruzAngell" target="_blank"><i class="ri-github-line"></i></a>
                         <a class="linkedin-icon" href="https://www.linkedin.com/in/angel-cruz-60b576214/" target="_blank"><i class="ri-linkedin-box-line"></i></a>
+                        <a class="chat-icon" href="https://wa.me/message/DOBUBT3QC7LXE1"><i class="ri-message-3-line"></i></a>
                     </div>
                 </div>
         </div>
@@ -72,41 +73,90 @@
 
     <section class="work-experience">
         <h1 class="tittle-experience">Experiencia Laboral</h1>
-             <div class="content-experience">
-                <h1>Casa Editorial El Tiempo</h1>    
-                <h2>Ingeniero de Proyectos Junior</h2>
-                <h3 class="date1" >Nov. 2022 - Jun. 2023</h3>
+
+             <ul class="timeline">
+                <li class="timeline-event">
+                  <label class="timeline-event-icon"></label>
+                  <div class="timeline-event-copy">
+                    <p class="timeline-event-thumbnail">Nov 2022 - Jun 2023</p>
+                    <h4>Casa Editorial El Tiempo</h4>
+                    <h3>Ingeniero de Proyectos Junior</h3>
                     <p>Mejorar código de aplicaciones en funcionamiento y administrar parte de las bases de datos de la Compañía y participar en la implementación del nuevo servidor para la impresión del periódico.
+                    <br><br>
+                    Uso de herramientas de desarrollo como <span>SQL Server Management Studio</span> para gestionar los datos de <span>Club Vivamos</span> y <span>Visual Studio</span> para modificar su funcionalidad a nivel <span>BackEnd</span> en la web.
+                    <br><br>
+                    Liderazgo en la implementación del nuevo servidor para la impresión del periodico, y gestión de las áreas correspondientes para llevar a cabo el correcto desarrollo del proyecto.
                     </p>
-             </div>
-             <div class="content-experience">
-                <h1>Casa Editorial El Tiempo</h1>    
-                <h2>Ingeniero de Soporte</h2>
-                <h3 class="date2" >May. 2022 - Nov. 2022</h3>
-                    <p>Encargado de administrar parte de la Bases de Datos de Facturación Electrónica, y, dar soporte al personal acerca de la aplicación OnBase utilizada para la administración de contratos legales de la Compañia. 
+                  </div>
+                </li>
+                <li class="timeline-event">
+                    <label class="timeline-event-icon"></label>
+                    <div class="timeline-event-copy">
+                      <p class="timeline-event-thumbnail">May 2022 - Nov 2022</p>
+                      <h4>Casa Editorial El Tiempo</h4>
+                      <h3>Ingeniero de Soporte - Aprendiz</h3>
+                      <p>Encargado de administrar parte de la Bases de Datos de <span>Facturación Electrónica</span>, y dar soporte al personal acerca de la aplicación <span>OnBase</span>, utilizada para la administración de contratos legales de la Compañia.
+                      <br><br>
+                      Herramientas usadas como <span>SQL Server Managegement Studio</span> para la administración de datos de <span>Facturación Electronica</span>, y uso de roles administrativos para el dar el correcto soporte a los usuarios de <span>OnBase</span>.
                     </p>
-             </div>
+                    </div>
+                  </li>
+              </ul>
     </section>
 
-    <div class="linea_decorativa_experiencia" id="skills"></div>
+    <div class="linea_decorativa_experiencia" id="projects"></div>
 
     <section class="skills">
-        <h1 class="skills-title">Habilidades</h1>
+        <h1 class="skills-title">Proyectos</h1>
         <div class="skills-content">
-            <h2 class="tittle-post" >Desarrollador</h2>
-            <ul class="skills-items">
-                <li class="li-html" >HTML</li>
-                <li class="li-css">CSS</li>
-                <li class="li-js">JavaScript</li>
-                <li class="li-astro">Astro</li>
-                <li class="li-sql">SQL</li>
-            </ul>
-            <h2 class="tittle-post" >Diseñador</h2>
-            <ul class="skills-items">
-                <li class="li-photo">Photoshop</li>
-                <li class="li-ilu">Illustrator</li>
-                <li class="li-figma">Figma</li>
-            </ul>
+              <div class="card">
+                <div class="article-card">
+                  <img class="IMG-Project" src="./images/Mudanza.png" alt="Imagen-Mudanza">
+                  <div class="content">
+                    <div class="project-links">
+                      <h3>Reliable Transfers</h3>
+                      <div class="project-list">
+                        <a class="github-icon" href="https://github.com/CruzAngell/ReliableTransfers" target="_blank"><i class="ri-github-line"></i></a>
+                        <a class="demo-icon" href="https://cruzangell.github.io/ReliableTransfers/" target="_blank"><i class="ri-share-circle-line"></i></a>
+                      </div>
+                    </div>
+                    <p>Página Web de Mudanzas desarrollada con <span>HTML</span>, <span>CSS</span> y <span>Bootstrap</span>.
+                    
+                    En este proyecto desarrollé una página web no funcional con el proposito de imitar una compañia de mudanzas.
+                    </p>
+                    <div class="tecnologies-list">
+                      <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="article-card">
+                  <img class="IMG-Project" src="./images/Code.jpg" alt="Imagen-Mudanza">
+                  <div class="content">
+                    <div class="project-links">
+                      <h3>Proyecto 2</h3>
+                      <div class="project-list">
+                        <a class="github-icon" href="#" target="_blank"><i class="ri-github-line"></i></a>
+                        <a class="demo-icon" href="#" target="_blank"><i class="ri-share-circle-line"></i></a>
+                      </div>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nemo, perspiciatis sapiente amet quidem dolorem quod odit minima molestiae. Maxime quaerat non dolor ex dicta.
+                    </p>
+                    <div class="tecnologies-list">
+                      <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
     </section>
 
@@ -114,20 +164,34 @@
 
     <section class="education" id="education">
         <h1 class="education-tittle">Formación Acádemica</h1>
-             <div class="content-education">
-                <h1>Politecnico Grancolombiano</h1>    
-                <h2>Ingenieria de Software</h2>
-                <h3 class="education-date-1" >En curso...</h3>
-                    <p>Mejorar código de aplicaciones en funcionamiento y administrar parte de las bases de datos de la Compañía y participar en la implementación del nuevo servidor para la impresión del periódico.
-                    </p>
-             </div>
-             <div class="content-education">
-                <h1>Politecnico Internacional</h1>    
-                <h2>Tecnologo en Desarrollo de Software</h2>
-                <h3 class="education-date-2" >Ene. 2020 - Abr. 2023</h3>
-                    <p>Mejorar código de aplicaciones en funcionamiento y administrar parte de las bases de datos de la Compañía y participar en la implementación del nuevo servidor para la impresión del periódico.
-                    </p>
-             </div>
+
+             <ul class="timeline">
+                <li class="timeline-event">
+                  <label class="timeline-event-icon"></label>
+                  <div class="timeline-event-copy">
+                    <p class="timeline-event-thumbnail">En curso...</p>
+                    <h4>Politecnico Grancolombiano</h4>
+                    <h3>Ingenieria de Software</h3>
+                    <p>Descripción Grancolombiano...</p>
+                  </div>
+                </li>
+                <li class="timeline-event">
+                    <label class="timeline-event-icon"></label>
+                    <div class="timeline-event-copy">
+                      <p class="timeline-event-thumbnail">Feb 2020 - Abr 2023</p>
+                      <h4>Politecnico Internacional</h4>
+                      <h3>Desarrollo de Software</h3>
+                      <p><p>Durante mi Tecnólogo en Desarrollo de Software, he cultivado habilidades sólidas en diversos lenguajes de programación y herramientas de desarrollo. <br>Mi experiencia abarca proyectos básicos universitarios que han involucrado la implementación de tecnologías como <span>HTML</span>, <span>CSS</span> y <span>JavaScript</span> para crear interfaces atractivas y funcionales. 
+                        <br><br>    
+                        Además, he trabajado con Bases de Datos, utilizando <span>SQL Server Management Studio</span> y <span>MySQL Workbench</span> para gestionar y administrar datos de manera eficiente. 
+                        <br><br>
+                        Mi destreza en el desarrollo de aplicaciones se extiende a lenguajes como <span>Java</span> y <span>C#</span>, donde he participado en la creación de soluciones basicas pero escalables. 
+                        <br><br>
+                        A lo largo de mi educación, he demostrado una rápida adaptabilidad a nuevas tecnologías, y estoy entusiasmado por aplicar estas habilidades en <span>proyectos a futuro.</span></p></p>
+                    </div>
+                  </li>
+              </ul>
+
     </section>
 
     <div class="linea_decorativa_formacion"></div>
